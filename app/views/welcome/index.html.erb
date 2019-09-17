@@ -1,12 +1,5 @@
 
-<div class="card text-center">
-    <div class="card-body">
-        <h2 class="card-title">Special title treatment</h2>
-        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>        
-    </div>
-</div>
-
-<div class="bd-example">
+<%# <div class="bd-example">
   <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
     <ol class="carousel-indicators">
       <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
@@ -16,21 +9,21 @@
     <div class="carousel-inner">
       <div class="carousel-item active">
         <%= image_tag 'garden1.jpg', :class=>"d-block w-100", :alt=>"Beds with Porter" %>
-        <div class="carousel-caption d-none d-md-block">
+<%#        <div class="carousel-caption d-none d-md-block">
           <h5>First slide label</h5>
           <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
         </div>
       </div>
       <div class="carousel-item">
         <%= image_tag 'garden3.jpg', :class=>"d-block w-100", :alt=>"Lilies" %>
-        <div class="carousel-caption d-none d-md-block">
+<%#        <div class="carousel-caption d-none d-md-block">
           <h5>Second slide label</h5>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         </div>
       </div>
       <div class="carousel-item">
         <%= image_tag 'garden2.jpg', :class=>"d-block w-100", :alt=>"Rose Campion and Red Hot Poker"%>
-        <div class="carousel-caption d-none d-md-block">
+<%#        <div class="carousel-caption d-none d-md-block">
           <h5>Third slide label</h5>
           <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
         </div>
@@ -45,19 +38,146 @@
       <span class="sr-only">Next</span>
     </a>
   </div>
+</div> %>
+
+</br>
+</br>
+
+<div class="container">
+    <div class="row">
+        <div class="col-12 md-8">
+            <div class="jumbotron jumbotron-fluid">
+                <h1 class="display-4"></h1>
+                <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+                <hr class="my-4">
+                <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+            </div>
+        </div>
+    </div>
 </div>
 
-<div class="card text-center">    
+</br>
+
+<div class="card text-center">
     <div class="card-body">
-        <h5 class="card-title">Special title treatment</h5>
-        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>        
+        <h1 class="card-title">Main Features</h1>
+        <%# <p class="card-text"> %>
+            <div class="card mb-3" style="max-width: 540px;">
+                <div class="row no-gutters">
+                    <div class="col-md-3">
+                        <%= image_tag '24px.svg', :class=>"card-img", :alt=>"Check Mark" %>  
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">Garden Notes</h5>
+                                <p class="card-text">All of your garden reminders and notes in one convenient spot.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card mb-3" style="max-width: 540px;">
+                <div class="row no-gutters">
+                    <div class="col-md-3">
+                        <%= image_tag '24px.svg', :class=>"card-img", :alt=>"Check Mark" %>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">Plant Inventory</h5>
+                                <p class="card-text">Ability to add pictures and notes about specific plants in your collection.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card mb-3" style="max-width: 540px;">
+                <div class="row no-gutters">
+                    <div class="col-md-3">
+                        <%= image_tag '24px.svg', :class=>"card-img", :alt=>"Check Mark" %> 
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">Reminders</h5>
+                                <p class="card-text">Schedule tasks and reminders for tomorrow, next week, or next year.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <%# </p>        %>
     </div>
 </div>
 
 <div class="card text-center">    
     <div class="card-body">
-        <h5 class="card-title">Special title treatment</h5>
+        </br>
+        <h1 class="card-title">User Image Gallery</h1>
+        <p class="card-text">Garden and plant pictures submitted by users.</p>        
+    </div>
+</div>
+
+
+<div class="row">
+    <div class="col-md-4">
+        <div class="card text-center">
+        <%= image_tag 'garden4.jpg', :class=>"card-img-top", :alt=>"River Romance Iris" %>        
+            <div class="card-body">
+                <h5 class="card-title">River Romance Iris</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="card text-center">
+        <%= image_tag 'garden3.jpg', :class=>"card-img-top", :alt=>"Rose Campion and Red Hot Poker" %>    
+            <div class="card-body">
+                <h5 class="card-title">Perennial Bed</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="card text-center">
+        <%= image_tag 'garden2.jpg', :class=>"card-img-top", :alt=>"Eyeliner Lily" %>    
+            <div class="card-body">
+                <h5 class="card-title">Eyeliner Lily</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="card text-center">    
+    <div class="card-body">
+        </br>
+        </br>
+        <h1 class="card-title">Sign Up</h1>
         <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-        <a href="#" class="btn btn-primary">Sign Up</a>
+        <a href="#" class="btn btn-success">Sign Up</a>
+        </br>
+    </div>
+</div>
+
+<div class="card text-center"> 
+    </br>
+    </br>
+    <div class="card-body">
+        <h1 class="card-title">Contact Us</h1>
+        <form>
+            <div class="form-group">
+                <label for="exampleFormControlTextarea1">Please write your message to us below.</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3">Type your message here...</textarea>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <input type="text" class="form-control" placeholder="Name">
+                </div>
+                <div class="col">
+                    <input type="text" class="form-control" placeholder="Email">
+                </div>
+            </div>
+        </form>
+        </br>
+        <a href="#" class="btn btn-success">Send Message</a>
     </div>
 </div>
