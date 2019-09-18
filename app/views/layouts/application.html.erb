@@ -23,23 +23,23 @@
   <body>
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <h1 class="navbar-brand" href="#">Garden Journal</h1>
+      <h1><%= link_to "Garden Journal ", root_path, class: "navbar-brand" %></h1>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <%= link_to " Blog ", "/path1", class: "nav-link"  %>
+              <%= link_to " Blog ", blog_path, class: "nav-link"  %>
             </li>
             <li class="nav-item">
-              <%= link_to " About ", "/path2", class: "nav-link"  %>
+              <%= link_to " About ", about_path, class: "nav-link"  %>
             </li>
             <li class="nav-item">
-              <%= link_to " Sign Up ", "/path3", class: "nav-link"  %>
+              <%= link_to " Sign Up ", new_user_session_path, class: "nav-link"  %>
             </li>
             <li class="nav-item">
-              <%= link_to " Contact ", "/path4", class: "nav-link"  %>
+              <%= link_to " Contact ", contact_path, class: "nav-link"  %>
             </li>
           </ul>
         </div>
@@ -60,16 +60,16 @@
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <%= link_to " Blog ", "/path1", class: "nav-link"  %>
+                <%= link_to " Blog ", blog_path, class: "nav-link"  %>
               </li>
               <li class="nav-item">
-                <%= link_to " About ", "/path2", class: "nav-link"  %>
+                <%= link_to " About ", about_path, class: "nav-link"  %>
               </li>
               <li class="nav-item">
-                <%= link_to " Sign Up ", "/path3", class: "nav-link"  %>
+                <%= link_to " Sign Up ", new_user_session_path, class: "nav-link"  %>
               </li>
               <li class="nav-item">
-                <%= link_to " Contact ", "/path4", class: "nav-link"  %>
+                <%= link_to " Contact ", contact_path, class: "nav-link"  %>
               </li>
             </ul>
           </div>
